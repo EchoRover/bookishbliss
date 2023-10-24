@@ -1,0 +1,146 @@
+body{
+    background-color: rgb(218, 231, 231);
+    margin: 0;
+    font-family: sans-serif;
+
+}
+h1{
+    margin: 0;
+    font-size: inherit;
+    font-style: oblique;
+    color: rgb(122, 196, 131);
+    
+}
+
+
+
+header{
+    font-size: 4rem;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.788);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div{
+    margin-left: 10px;
+    font-size: inherit;
+}
+
+.content{
+   
+    margin: 40px;
+
+}
+
+#allbooks{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.book{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(153, 153, 233);
+    display: grid;
+    grid-template-rows: 200px 200px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.image{
+    width: inherit;
+    height: 200px;
+    
+
+}
+
+img{
+    object-fit: cover;
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+}
+
+.image:hover{
+    z-index: 1000;
+    width: 300px;
+    background-color: rgb(174, 220, 233);
+    
+    
+}
+.image:hover img{
+    
+    object-fit: contain;
+    height: 400px;
+    width: inherit;
+    
+}
+
+
+.bookinfo{
+    background-color: rgba(185, 235, 244, 0.885);
+    position: relative;
+    width: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    
+    height: inherit;
+    display: grid;
+    grid-template-rows: 50px 100px 50px;
+
+    text-align: center;
+    color: rgb(12, 94, 92);
+    
+
+}
+
+.booksummary{
+    
+    overflow:scroll;
+    padding: 0px 15px;
+    font-size: 0.9rem;
+
+}
+.title{
+    font-style: italic;
+    font-size: 1.1rem;
+    align-self: center;
+    font-weight:500;
+    margin: 5px;
+    font-weight: 600;
+    color: rgb(25, 86, 209);
+}
+
+.tags{
+    margin-top: 5px;
+    margin: 5px;
+    font-style: oblique;
+    font-size: small;
+    align-self: center;
+}
+.bookinfo::after{
+    content: "";
+    position:absolute;
+    top: -30px;
+    width: inherit;
+    height: 30px;
+    border-radius: 12px 12px 0 0 ;
+
+    left: 0;
+    
+    background-color: inherit;
+    
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        font-size: 2rem;
+    }
+    
+}
